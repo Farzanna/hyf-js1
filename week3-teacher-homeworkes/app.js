@@ -5,11 +5,9 @@
 //Return: Array
 
 let myArray = [5, 3, 2, 9, 19, 20, 3, 5];
-
+let myArrayToDelete = [];
 function editArray(myArrayX, objectToDelete, objectToAdd) {
-  let myArrayToDelete = [100];
-  myArrayToDelete.splice(0, 1);
-
+  
   for (i = 0; i < myArrayX.length;) {
     if (myArrayX[i] == objectToDelete) {
       myArrayToDelete.push(i);
