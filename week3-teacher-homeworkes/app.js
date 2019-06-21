@@ -66,8 +66,6 @@ let oldChar = /good/gi;
 let newChar = "";
 
 function replaceChar(myStringX, oldCharX, newCharX) {
-  // let oldCharXAll = /"oldCharX"/gi;
-  // console.log (myStringX.replace(oldCharXAll, newCharX))
   let newMyString = myStringX.replace(oldCharX, newCharX);
   return newMyString;
 }
