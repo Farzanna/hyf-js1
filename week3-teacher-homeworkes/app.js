@@ -39,11 +39,7 @@ console.log(editArray(myArray, 3, 100));
 //the animal sound and name
 // Return: void (nothing)
 
-// Object Fun
-// Make an array of pet objects, this pet object should include animal name animal weight animalSound - the animal sound 
-//should be a function that console logs the sound the animal makes (meow, moo, oink) loop through the array and print out 
-//the animal sound and name
-// Return: void (nothing)
+
 let petsObject = [
   {
     name: 'cat',
@@ -84,6 +80,7 @@ petsObject.forEach(element => {
 // Return: String
 // Write a program that prints out, in reverse order, every multiple of 3 between 1 and 200. output should be 198 195 192 ...
 // Return: void (nothing)
+
 let minNum = 1;
 let maxNum = 200;
 let multipleNum = 3;
