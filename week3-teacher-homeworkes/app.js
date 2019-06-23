@@ -75,12 +75,33 @@ petsObject.forEach(element => {
 //+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-question3: String Manipulation +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
 
 // String Manipulation
-// Arguement: 'Hello, it is a good day, I eat good bananas, I do not like the word good' remove the word 'good' from the
-//string
-// Return: String
+// Arguement: 'Hello, it is a good day, I eat good bananas, I do not like the word good' remove the word 'good' from the string
+
+let myString = 'Hello, it is a good day, I eat good bananas, I do not like the word good';
+let oldChar = /good/gi;
+let newChar = '';
+
+function replaceChar(myStringX, oldCharX, newCharX) {
+  // let oldCharXAll = /"oldCharX"/gi;
+  // console.log (myStringX.replace(oldCharXAll, newCharX))
+  let newMyString = myStringX.replace(oldCharX, newCharX);
+  return newMyString;
+}
+console.log(replaceChar(myString, oldChar, newChar));
+
+
+
+
+
+
+
+//+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-question4: Conditionals +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+
+
 // Write a program that prints out, in reverse order, every multiple of 3 between 1 and 200. output should be 198 195 192 ...
 // Return: void (nothing)
 
+
+//-----First solution----
 let minNum = 1;
 let maxNum = 200;
 let multipleNum = 3;
@@ -99,15 +120,8 @@ function findMultipleNumbs1(minNumX, maxNumX, multipleNumX) {
 }
 findMultipleNumbs1(minNum, maxNum, multipleNum);
 
-return;
 
-
-
-
-//+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-question4: Conditionals +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+
-
-// Write a program that prints out, in reverse order, every multiple of 3 between 1 and 200. output should be 198 195 192 ...
-// Return: void (nothing)
+//----- second solution -----
 
 let endNum = 200;
 let firstNum = 1;
