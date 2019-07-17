@@ -6,6 +6,14 @@ function sum(...theArgs) {
   });
 }
 console.log(sum(1, 2, 3));
+// -------after review----
+const sum = (a, b, c) => {
+  let sumAll = a + b + c;
+  console.log(sumAll);
+  return sumAll;
+};
+
+console.log(sum(1, 2, 3))
 
 //+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+--+-+ Q-2 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
 //Create a function named colorCar that receives a color, and prints out, 'a red car' for example.
